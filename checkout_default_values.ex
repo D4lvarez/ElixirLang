@@ -1,4 +1,5 @@
 defmodule Checkout do
+  # defguard indica la creación de macros
   defguard is_rate(value) when is_float(value) and value >= 0 and value <= 1
   defguard is_cents(value) when is_integer(value) and value >= 0
   # \\ indica que el parámetro tiene un valor por defecto
